@@ -291,7 +291,7 @@ func calculateLongerTermData(klines []Kline) *LongerTermData {
 
 // getOpenInterestData 获取OI数据
 func getOpenInterestData(symbol string) (*OIData, error) {
-	url := fmt.Sprintf("https://fapi.binance.com/fapi/v1/openInterest?symbol=%s", symbol)
+	url := fmt.Sprintf("https://fapi.asterdex.com/fapi/v1/openInterest?symbol=%s", symbol)
 
 	resp, err := http.Get(url)
 	if err != nil {
@@ -324,7 +324,7 @@ func getOpenInterestData(symbol string) (*OIData, error) {
 
 // getFundingRate 获取资金费率
 func getFundingRate(symbol string) (float64, error) {
-	url := fmt.Sprintf("https://fapi.binance.com/fapi/v1/premiumIndex?symbol=%s", symbol)
+	url := fmt.Sprintf("https://fapi.asterdex.com/fapi/v1/premiumIndex?symbol=%s", symbol)
 
 	resp, err := http.Get(url)
 	if err != nil {

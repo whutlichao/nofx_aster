@@ -81,7 +81,7 @@ func (w *WSClient) Connect() error {
 		HandshakeTimeout: 10 * time.Second,
 	}
 
-	conn, _, err := dialer.Dial("wss://ws-fapi.binance.com/ws-fapi/v1", nil)
+	conn, _, err := dialer.Dial("wss://ws-fapi.asterdex.com/ws-fapi/v1", nil)
 	if err != nil {
 		return fmt.Errorf("WebSocket连接失败: %v", err)
 	}
