@@ -5,6 +5,10 @@
 
 # AI 工具
 .claude/
+.kilocode/
+openspec/
+AGENTS.md
+CLAUDE.md
 
 # 编译产物
 nofx-auto
